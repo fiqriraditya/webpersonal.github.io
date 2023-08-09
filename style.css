@@ -1,0 +1,156 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+header {
+  background-color: #1a2238;
+  color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  color: #ac4d4d;
+  transform: rotate(3deg);
+}
+
+.btn-cta {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background: #ac4d4d;
+  color: #eaeaea;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+li:hover {
+  color: #ac4d4d;
+  transform: rotate(3deg);
+}
+
+li a {
+  transition: all 0.5s ease 0s;
+  display: inline-block;
+}
+
+li a:hover {
+  color: #ac4d4d;
+  transform: rotate(3deg);
+}
+
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 20px;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.tentang {
+  background: #1a2238;
+  text-align: center;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.deskription {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.img-foto {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.mt-10 {
+  padding-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-item {
+  background: #eaeaea;
+  color: #222;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-item {
+    width: 100%;
+  }
+  .intro {
+    margin-top: 20px;
+  }
+  .conatainer {
+    padding: 0;
+  }
+  .img-foto {
+    padding: 0;
+  }
+}
